@@ -9,11 +9,11 @@ class EducationModel {
     required this.company,
   });
 }
+
 List<EducationModel> educationModel = [
   EducationModel(
-    duration: '2019 - 2023',
-    position: 'Kohat University of Science and Technology (Hangu Campus)',
-    company: 'Bachelor of Science in Computer Science',
-  ), 
- 
-  ];
+    duration: '2020 - 2024',
+    position: 'Kohat University of Science and Technology(KUST), Kohat',
+    company: 'Bachelor of Science in Software Engineering',
+  ),
+];

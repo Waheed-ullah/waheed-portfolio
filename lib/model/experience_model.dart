@@ -9,15 +9,26 @@ class ExperienceModel {
     required this.company,
   });
 }
+
 List<ExperienceModel> experienceModel = [
   ExperienceModel(
-    duration: '2022 - Present',
-    position: 'Flutter Developer(Head)',
-    company: 'Uzair Technology',
-  ), 
-  ExperienceModel(
-    duration: '2024 - Present',
+    duration: '01/2025 - Present',
     position: 'Flutter Developer',
-    company: 'iTechGemeni',
+    company: 'Nth Logics',
   ),
-  ];
+  ExperienceModel(
+    duration: '09/2024 - 01/2025',
+    position: 'Flutter Developer',
+    company: 'FutureSol Tech Pvt Ltd',
+  ),
+  ExperienceModel(
+    duration: '04/2024 - 09/2024',
+    position: 'Flutter Developer',
+    company: 'Tech Solutions Pro',
+  ),
+  ExperienceModel(
+    duration: '07/2022 - 04/2024',
+    position: 'Flutter Developer',
+    company: 'Uzair Technology',
+  ),
+];

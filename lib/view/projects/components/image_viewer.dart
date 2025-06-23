@@ -1,12 +1,15 @@
-import 'package:flutter_portfolio/model/project_model.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:flutter/material.dart';
 
 class ImageViewer extends StatelessWidget {
   final List<String> images;
   String description;
-  ImageViewer(BuildContext context,
-      {super.key, required this.images, required this.description});
+  ImageViewer(
+    BuildContext context, {
+    super.key,
+    required this.images,
+    required this.description,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -18,12 +21,14 @@ class ImageViewer extends StatelessWidget {
           height: size.height,
           width: size.width,
           child: Scaffold(
-              backgroundColor: Colors.black,
-              body: Container(
-                color: Colors.white,
-                child: Center(
-                    child: PhotoView(imageProvider: AssetImage(images[0]))),
-              )),
+            backgroundColor: Colors.black,
+            body: Container(
+              color: Colors.white,
+              child: Center(
+                child: PhotoView(imageProvider: AssetImage(images[0])),
+              ),
+            ),
+          ),
         ),
       ),
     );

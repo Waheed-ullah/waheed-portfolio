@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/res/constants.dart';
 import 'drawer_image.dart';
+
 class About extends StatelessWidget {
   const About({super.key});
   @override
@@ -8,21 +9,20 @@ class About extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 1.23,
       child: Container(
-        color:  bgColor,
+        color: bgColor,
         child: Column(
           children: [
-            const Spacer(flex: 2,),
+            const Spacer(flex: 2),
             const DrawerImage(),
             const Spacer(),
-            Text('Sami Ullah Okz',style: Theme.of(context).textTheme.titleSmall,),
-            const SizedBox(height: defaultPadding/4,),
-            const Text('Flutter Developer & Graduated in\n computer science',
+            Text('Waheed Ullah', style: Theme.of(context).textTheme.titleSmall),
+            const SizedBox(height: defaultPadding / 4),
+            const Text(
+              'Flutter Developer || Software Engineer',
               textAlign: TextAlign.center,
-              style: TextStyle(
-                  fontWeight: FontWeight.w200,
-                  height: 1.5
-              ),),
-            const Spacer(flex: 2,),
+              style: TextStyle(fontWeight: FontWeight.w200, height: 1.5),
+            ),
+            const Spacer(flex: 2),
           ],
         ),
       ),

@@ -48,7 +48,7 @@ class EducationSection extends StatelessWidget {
                 right: Responsive.isMobile(context) ? 30 : 200,
               ),
               child: SelectableText(
-                "Graduated from Kohat University of Science and Technology (KUST), Hangu Campus in 2023. Completed the Final Year Project (FYP): HouseHold, specializing in mobile app development using Flutter, Firebase, and modern UI/UX design. Developed scalable, user-centric applications and integrated advanced technologies, gaining expertise in cross-platform development and innovative problem-solving.",
+                "Graduated from Kohat University of Science and Technology (KUST) in 2024. Completed the Final Year Project (FYP): ZooBay - Animals Market, specializing in mobile app development using Flutter, Firebase, and modern UI/UX design. Developed scalable, user-centric applications and integrated advanced technologies, gaining expertise in cross-platform development and innovative problem-solving.",
                 style: GoogleFonts.poppins(
                   fontSize: Responsive.isMobile(context) ? 16 : 18,
                   color: Colors.grey,

@@ -17,14 +17,16 @@ class ContactIcon extends StatelessWidget {
           IconButton(
             onPressed: () {
               launchUrl(
-                Uri.parse('https://www.linkedin.com/in/sami-ullah-dev147'),
+                Uri.parse(
+                  'https://www.linkedin.com/in/waheed-ullah-6b903b241/',
+                ),
               );
             },
             icon: SvgPicture.asset('assets/icons/linkedin.svg'),
           ),
           IconButton(
             onPressed: () {
-              launchUrl(Uri.parse('https://github.com/sami-Flutterdev'));
+              launchUrl(Uri.parse(''));
             },
             icon: SvgPicture.asset('assets/icons/github.svg'),
           ),

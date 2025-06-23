@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/res/widget.dart';
 import 'package:flutter_portfolio/view%20model/getx_controllers/projects_controller.dart';
 import 'package:flutter_portfolio/view/aboutUs/components/about_me.dart';
-import 'package:flutter_portfolio/view/aboutUs/components/contact.dart';
 import 'package:flutter_portfolio/view/aboutUs/components/experience.dart';
 import 'package:flutter_portfolio/view/aboutUs/components/myEducation.dart';
 import 'package:flutter_portfolio/view/aboutUs/components/mySkills.dart';
@@ -83,10 +82,7 @@ class DesktopView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(
-          flex: 1,
-          child: NavigationDrawer(controller: controller),
-        ),
+        Expanded(flex: 1, child: NavigationDrawer(controller: controller)),
         Expanded(
           flex: 3,
           child: Obx(
@@ -116,11 +112,35 @@ class NavigationTabsColumn extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(height:Responsive.isMobile(context) ? 30: 32,),
-          _buildNavItem(context,"Experience", ExperienceSection(), fontSize, controller),
-          _buildNavItem(context,"My Education", EducationSection(), fontSize, controller),
-          _buildNavItem(context,"My Skills", SkillsSection(), fontSize, controller),
-          _buildNavItem(context,"About Me", const AboutMeSection(), fontSize, controller),
+          SizedBox(height: Responsive.isMobile(context) ? 30 : 32),
+          _buildNavItem(
+            context,
+            "Experience",
+            ExperienceSection(),
+            fontSize,
+            controller,
+          ),
+          _buildNavItem(
+            context,
+            "My Education",
+            EducationSection(),
+            fontSize,
+            controller,
+          ),
+          _buildNavItem(
+            context,
+            "My Skills",
+            SkillsSection(),
+            fontSize,
+            controller,
+          ),
+          _buildNavItem(
+            context,
+            "About Me",
+            const AboutMeSection(),
+            fontSize,
+            controller,
+          ),
           // _buildNavItem(context,"Contact", ContactSection(), fontSize, controller),
         ],
       ),
@@ -143,11 +163,35 @@ class NavigationDrawer extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(height:Responsive.isMobile(context) ? 20: 50,),
-          _buildNavItem(context,"Experience", ExperienceSection(), fontSize, controller),
-          _buildNavItem(context,"My Education", EducationSection(), fontSize, controller),
-          _buildNavItem(context,"My Skills", SkillsSection(), fontSize, controller),
-          _buildNavItem(context,"About Me", const AboutMeSection(), fontSize, controller),
+          SizedBox(height: Responsive.isMobile(context) ? 20 : 50),
+          _buildNavItem(
+            context,
+            "Experience",
+            ExperienceSection(),
+            fontSize,
+            controller,
+          ),
+          _buildNavItem(
+            context,
+            "My Education",
+            EducationSection(),
+            fontSize,
+            controller,
+          ),
+          _buildNavItem(
+            context,
+            "My Skills",
+            SkillsSection(),
+            fontSize,
+            controller,
+          ),
+          _buildNavItem(
+            context,
+            "About Me",
+            const AboutMeSection(),
+            fontSize,
+            controller,
+          ),
           // _buildNavItem(context,"Contact", ContactSection(), fontSize, controller),
         ],
       ),
@@ -155,7 +199,8 @@ class NavigationDrawer extends StatelessWidget {
   }
 }
 
-Widget _buildNavItem(context,
+Widget _buildNavItem(
+  context,
   String title,
   Widget contentWidget,
   double fontSize,
@@ -165,25 +210,23 @@ Widget _buildNavItem(context,
     padding: const EdgeInsets.symmetric(vertical: 8.0),
     child: InkWell(
       onTap: () => controller.updateContent(title, contentWidget),
-      child: Obx(
-        () {
-          bool isActive = controller.selectedTitle.value == title;
-          return GradientButton(
-            width:  300,
-            onPressed: () {
-              controller.updateContent(title, contentWidget);
-            },
-            child: Text(
-              title,
-              style: TextStyle(
-                color: isActive ? Colors.orange : Colors.white,
-                fontSize: fontSize,
-                fontWeight: isActive ? FontWeight.bold : FontWeight.normal,
-              ),
+      child: Obx(() {
+        bool isActive = controller.selectedTitle.value == title;
+        return GradientButton(
+          width: 300,
+          onPressed: () {
+            controller.updateContent(title, contentWidget);
+          },
+          child: Text(
+            title,
+            style: TextStyle(
+              color: isActive ? Colors.orange : Colors.white,
+              fontSize: fontSize,
+              fontWeight: isActive ? FontWeight.bold : FontWeight.normal,
             ),
-          );
-        },
-      ),
+          ),
+        );
+      }),
     ),
   );
 }

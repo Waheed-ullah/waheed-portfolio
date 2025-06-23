@@ -12,15 +12,15 @@ class PersonalInfo extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(height: defaultPadding / 2),
-        AreaInfoText(title: 'Contact', text: '+92 330 3210550'),
-        AreaInfoText(title: 'Email', text: 'samiu09950@gmail.com'),
+        AreaInfoText(title: 'Contact', text: '+92 333 4463012'),
+        AreaInfoText(title: 'Email', text: 'waheeddev6@gmail.com'),
         AreaInfoText(
           title: 'LinkedIn',
-          text: "Sami Ullah",
+          text: "Waheed-Ullah",
         ), //'https://www.linkedin.com/in/sami-ullah-dev147'
         AreaInfoText(
           title: 'Github',
-          text: 'getSami147',
+          text: 'Waheed-ullah',
         ), //https://github.com/sami-Flutterdev
         SizedBox(height: defaultPadding),
         Text('Skills', style: TextStyle(color: Colors.white)),

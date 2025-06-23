@@ -16,7 +16,7 @@ class ConnectButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: defaultPadding),
       child: InkWell(
-        onTap: () => openWhatsApp("+92 330 3210550"),
+        onTap: () => openWhatsApp("+92 333 4463012"),
 
         borderRadius: BorderRadius.circular(defaultPadding + 10),
         child: Container(
@@ -51,7 +51,7 @@ class ConnectButton extends StatelessWidget {
               ),
               const SizedBox(width: defaultPadding / 4),
               Text(
-                'Whatsapp',
+                'WhatsApp',
                 style: Theme.of(context).textTheme.labelSmall!.copyWith(
                   color: Colors.white,
                   letterSpacing: 1.2,

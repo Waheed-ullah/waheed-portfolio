@@ -17,7 +17,7 @@ class AnimatedDescriptionText extends StatelessWidget {
       duration: const Duration(milliseconds: 200),
       builder: (context, value, child) {
         return Text(
-          'I’m Waheed Ullah — a Software Engineering graduate and experienced ${Responsive.isMobile(context) ? '\n' : '\n'} Flutter developer with 3 years of hands-on experience ${Responsive.isMobile(context) ? '\n' : '\n'}building mobile apps for both Android and iOS. I’ve developed ${Responsive.isMobile(context) ? '\n' : '\n'}and maintained high-quality apps focused on performance, design, ${Responsive.isMobile(context) ? '\n' : '\n'}and great user experience. I’m passionate about clean code, ${Responsive.isMobile(context) ? '\n' : '\n'} problem-solving, and always learning new things to grow as a developer.',
+          'I’m Waheed Ullah — a Software Engineering graduate and experienced ${Responsive.isMobile(context) ? '\n' : '\n'}Flutter developer with 3 years of hands-on experience ${Responsive.isMobile(context) ? '\n' : '\n'}building mobile apps for both Android and iOS. I’ve developed ${Responsive.isMobile(context) ? '\n' : '\n'}and maintained high-quality apps focused on performance, design, ${Responsive.isMobile(context) ? '\n' : '\n'}and great user experience. I’m passionate about clean code, ${Responsive.isMobile(context) ? '\n' : '\n'} problem-solving, and always learning new things to grow as a developer.',
           maxLines: 5,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(color: Colors.grey, wordSpacing: 2, fontSize: value),

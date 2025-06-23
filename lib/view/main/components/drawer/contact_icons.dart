@@ -28,7 +28,7 @@ class ContactIcon extends StatelessWidget {
             onPressed: () {
               launchUrl(Uri.parse(''));
             },
-            icon: SvgPicture.asset('assets/icons/github.svg', height: 20),
+            icon: SvgPicture.asset('assets/icons/github.svg'),
           ),
           const Spacer(),
         ],
